@@ -20,7 +20,19 @@ const tareanueva ={
 };
 array.push(tareanueva);
 }
+function eliminar(id){
+    const index = array.findIndex(array => array.id === id);
+    if(index !== -1){
+        array.splice(index,1);
+        mostrarTareas();
+    }else{
+        console.log("Tarea no encontrada");
+    }
+    
+}
 
+eliminar(2);
 
 agregarTarea("comprar alimentos");
+
 mostrarTareas();
