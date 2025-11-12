@@ -31,6 +31,23 @@ function eliminar(id){
     
 }
 
+const formulario = document.querySelector("form");
+
+formulario.addEventListener("submit", () => {
+    
+    input = document.querySelector("input");
+    agregarTarea(input.value);
+    const li = document.createElement("li");
+    li.textContent = input.value;
+    const ul = document.querySelector("ul");
+    // /li.innerHTML = input.value;
+    ul.appendChild(li);
+    mostrarTareas(); 
+    console.log(li);  
+    
+});
+
+
 eliminar(2);
 
 agregarTarea("comprar alimentos");

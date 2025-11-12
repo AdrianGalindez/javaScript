@@ -1,0 +1,34 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: 0%;
+}
+
+body{
+     font-family: "Playwrite HU", cursive;
+}
+
+main{
+    text-align: flex;
+    border-radius: 1%;
+    background-image: url("fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100lvh;
+    height: 100vh;
+    
+}
+
+.btn,btn-outline-success{
+    background-color: lawngreen;
+}
+
+ul{
+    list-style: none;
+}
+li a{
+    color: white;
+}
+
+
+
